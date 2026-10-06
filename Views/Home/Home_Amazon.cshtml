@@ -1,0 +1,178 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale=1 />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Home_Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .header {
+            height: 60px;
+            background-color: #131921;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .Img_1 {
+            width: 125px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .Img_2 {
+            width: 120px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .Img_3 {
+            width: 55px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        .Img_4 {
+            width: 120px;
+            height: 45px;
+            cursor: pointer;
+        }
+
+            .Img_1:hover, .Img_2:hover, .Img_3:hover, .Img_4:hover {
+                border: 1px solid white;
+            }
+        /*Thanh tìm kiếm*/
+        .search-box {
+            border-collapse: collapse;
+            height: 40px;
+            width: 830px;
+        }
+
+        .search_category {
+            width: 55px;
+            background-color: #E6E6E6;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: gray;
+            text-align: center;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .search_characters {
+            width: 725px;
+            background-color: white;
+            text-align: left;
+        }
+
+        .search-input {
+            height: 40px;
+            width: 725px;
+            border: none;
+            margin-left: 5px;
+        }
+
+        .search_btn_cell {
+            width: 50px;
+            padding: 0;
+        }
+
+        .btn-search {
+            width: 100%;
+            height: 100%;
+            background-color: #FEBD69;
+            border: none;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .btn-search:hover {
+                background-color: #f3a847;
+            }
+
+            .btn-search i {
+                font-size: 20px;
+            }
+
+        .toolbar {
+            height: 40px;
+            background-color: #232F3E;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .content {
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer {
+            height: 825px;
+        }
+
+        .footer_top {
+            height: 60%;
+            background-color: #232F3E;
+        }
+
+        .footer_bot {
+            height: 40%;
+            background-color: #131A22;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="~/Content/Img/Avt_Amazon.png" class="Img_1" />
+        <img src="~/Content/Img/Deliver.png" class="Img_2" />
+        <table class="search-box">
+            <tr>
+                <td class="search_category">All</td>
+                <td class="search_characters">
+                    <input type="text" placeholder="Search Amazon" class="search-input">
+                </td>
+                <th class="search_btn_cell">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </th>
+            </tr>
+        </table>
+        <img src="~/Content/Img/Lang.png" class="Img_3" />
+        <img src="~/Content/Img/Hello.png" class="Img_4" />
+    </div>
+
+    <div class="toolbar">
+
+    </div>
+    <div class="content">
+
+    </div>
+    <div class="footer">
+        <div class="footer_top"></div>
+        <div class="footer_bot"></div>
+    </div>
+</body>
+</html>
